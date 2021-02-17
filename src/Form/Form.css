@@ -1,0 +1,82 @@
+.formContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    min-width: 300px;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: white;
+}
+
+.form {
+    width: 100%;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+.buttonContainer {
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    color: white;
+    padding-top: 20px;
+}
+
+.buttonContainer .button {
+    min-width: 140px;
+    outline: none;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+}
+
+.submitButton {
+    background-color: #2D87D1;
+    padding: 10px;
+    outline: none;
+    cursor: pointer;
+    color: white;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    background-color: #f6f6f6;
+    color: #555;
+    font-size: 14px;
+}
+
+.addInputButton {
+    outline: none;
+    background-color: #00E6A0;
+    padding: 10px;
+    cursor: pointer;
+}
+
+input:focus {
+    outline: 1px solid #2D87D1;
+}
+
+.addInputButton:disabled,
+.addInputButton[disabled],
+.submitButton:disabled,
+.submitButton[disabled]{
+    background-color: #cccccc;
+    color: #666666;
+    cursor: default;
+}
+
+input[aria-invalid] {
+    border: 1px solid red;
+}
